@@ -1,0 +1,82 @@
+@charset "ISO-8859-1";
+ :root {
+            --primary-green: #10b981;
+            --gradient-hero: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f0fdf4;
+        }
+
+        .navbar-custom {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 10px 40px rgba(16, 185, 129, 0.1);
+        }
+
+        .navbar-brand {
+            font-weight: 800;
+            font-size: 1.8rem;
+            background: var(--gradient-hero);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .form-container {
+            max-width: 700px;
+            margin: 100px auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(16, 185, 129, 0.15);
+        }
+
+        .form-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: var(--gradient-hero);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-green);
+            box-shadow: 0 0 10px rgba(16, 185, 129, 0.2);
+        }
+
+        .btn-add {
+            background: var(--gradient-hero);
+            border: none;
+            color: white;
+            font-weight: 700;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-add:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+        }
+
+        .btn-back {
+            background: #f3f4f6;
+            border: 2px solid var(--primary-green);
+            color: var(--primary-green);
+            font-weight: 600;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-back:hover {
+            background: var(--primary-green);
+            color: white;
+        }
+
+        label {
+            font-weight: 600;
+        }
